@@ -1,6 +1,9 @@
 ## /history/countries/TAG - Country.txt ##
 capital = 2172
 primary_culture = mexican
+culture = hispano
+culture = norteno 
+culture = yucateco
 religion = catholic
 government = democracy
 plurality = 41

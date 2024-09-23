@@ -881,25 +881,25 @@
 #Wiyot / Sacramento (1500/950 POPS)
 84 = {
     aristocrats = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 5
     }
 
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 5
     }
 
     soldiers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 50
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 200
     }
@@ -1019,31 +1019,31 @@
 #Monterey (3000/1000 POPS)
 87 = {
     aristocrats = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 12
     }
 
     bureaucrats = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 3
     }
 
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 15
     }
 
     soldiers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 10
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 300
     }
@@ -1113,19 +1113,19 @@
 #(Presidio de) Los Angeles (7000/2500 POPS)
 89 = {
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 25
     }
 
     soldiers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 15
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 900
     }
@@ -1193,19 +1193,19 @@
 #(Presidio Real de) San Diego (5000/1500 POPS)
 90 = {
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 10
     }
 
     soldiers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 40
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 150
     }
@@ -1285,13 +1285,13 @@
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 2100
     }
 
     bureaucrats = {
-        culture = mexican
+        culture = hispano
         religion = protestant
         size = 50
     }
@@ -1787,31 +1787,31 @@
     }
 
     aristocrats = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 2
     }
 
     bureaucrats = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 3
     }
 
     clergymen = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 5
     }
 
     soldiers = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 15
     }
 
     farmers = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 225
     }
@@ -1843,7 +1843,7 @@
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 50
     }
@@ -1853,25 +1853,25 @@
 #Fuerte Santa Maria / Silver City (7500/1500 POPS)
 38 = {
     aristocrats = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 40
     }
 
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 10
     }
 
     soldiers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 150
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 400
     }
@@ -1891,25 +1891,25 @@
 #Santa Fe (20000/4500 POPS)
 105 = {
     aristocrats = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 50
     }
 
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 50
     }
 
     soldiers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 200
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 1600
     }
@@ -1967,31 +1967,31 @@
 #Albuquerque (12000/2000 POPS)
 2148 = {
     aristocrats = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 25
     }
 
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 35
     }
 
     artisans = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 75
     }
 
     soldiers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 20
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 700
     }
@@ -2067,7 +2067,7 @@
 #Chiricahua / Lordsburg (6500/1200 POPS)
 2662 = {
     clergymen = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 25
     }
@@ -2079,13 +2079,13 @@
     }
 
     soldiers = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 25
     }
 
     farmers = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 500
     }
@@ -3831,7 +3831,7 @@
     }
 
     farmers = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 200
         militancy = 9
@@ -3870,25 +3870,25 @@
     }
 
     bureaucrats = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 5
     }
 
     clergymen = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 10
     }
 
     artisans = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 50
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 150
     }
@@ -3965,13 +3965,13 @@
     }
 
     soldiers = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 60
     }
 
     farmers = {
-        culture = mexican
+        culture = norteno
         religion = catholic
         size = 200
         militancy = 9
@@ -4122,13 +4122,13 @@
     }
 
     artisans = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 10
     }
 
     farmers = {
-        culture = mexican
+        culture = hispano
         religion = catholic
         size = 50
     }

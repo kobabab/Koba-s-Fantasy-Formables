@@ -1,6 +1,6 @@
 ## /history/countries/TAG - Country.txt ##
 capital = 2158
-primary_culture = mexican
+primary_culture = norteno
 religion = catholic
 government = democracy
 plurality = 41.0
