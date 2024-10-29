@@ -77,10 +77,10 @@ political_decisions = {
 			set_global_flag = formed_BLK
 			change_tag = BLK
 			political_reform = federalism
-			add_accepted_culture = serbian
+			add_accepted_culture = serb
 			add_accepted_culture = croatian
 			add_accepted_culture = bulgarian
-			add_accepted_culture = romanian
+			add_accepted_culture = gypsynian
 			add_accepted_culture = albanian
 			any_country = {
 				limit = {
@@ -323,14 +323,14 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 
-	embrace_roma_BLK = {
+	embrace_gypsy_BLK = {
 		picture = embrace_minority
 		potential = {
 			tag = BLK
-			any_owned_province = { culture = roma }
+			any_owned_province = { culture = gypsy }
 			NOT = {
-				primary_culture = roma
-				accepted_culture = roma
+				primary_culture = gypsy
+				accepted_culture = gypsy
 			}
 		}
 
@@ -350,17 +350,17 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 			NOT = {
 				any_owned_province = {
-					culture = roma
+					culture = gypsy
 					average_militancy = 2
 				}
 			}
 		}
 
 		effect = {
-			add_accepted_culture = roma
+			add_accepted_culture = gypsy
 			prestige = -75
 			any_pop = {
-				limit = { has_pop_culture = roma }
+				limit = { has_pop_culture = gypsy }
 				consciousness = -4
 				militancy = -4
 			}
@@ -407,14 +407,14 @@ political_decisions = {
 			}
 		}
 
-		##Romania Stuff##
+		##gypsynia Stuff##
 
-		#Description: Allows the Balkan Federation to expand into Romania's cores
-		lay_claim_on_romania = {
-		picture = create_romania
+		#Description: Allows the Balkan Federation to expand into gypsynia's cores
+		lay_claim_on_gypsynia = {
+		picture = create_gypsynia
 		potential = {
 			tag = BLK
-			NOT = { has_country_flag = lay_claim_on_romania }
+			NOT = { has_country_flag = lay_claim_on_gypsynia }
 		}
 
 		allow = {
@@ -443,7 +443,7 @@ political_decisions = {
 				war = no
 				654 = {
 					owner = {
-						NOT = { is_culture_group = pan_romanian }
+						NOT = { is_culture_group = pan_gypsynian }
 						war_with = THIS
 					}
 				}
@@ -453,7 +453,7 @@ political_decisions = {
 		effect = {
 			prestige = 50
 			badboy = 10
-			set_country_flag = lay_claim_on_romania
+			set_country_flag = lay_claim_on_gypsynia
 			#Description: Transylvania
 			SIE = { all_core = { add_core = BLK } }
 			any_country = {
@@ -527,7 +527,7 @@ political_decisions = {
 				war = no
 				969 = {
 					owner = {
-						NOT = { is_culture_group = pan_romanian }
+						NOT = { is_culture_group = pan_gypsynian }
 						war_with = THIS
 					}
 				}
@@ -565,7 +565,7 @@ political_decisions = {
 			war_policy = jingoism
 			has_unclaimed_cores = no
 			invention = manifest_destiny
-			invention = nostalgic_romanticism
+			invention = nostalgic_gypsynticism
 		}
 
 		effect = {

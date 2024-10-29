@@ -112,7 +112,7 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 
-    unite_the_hispanics_under_spanish_rule = {
+    unite_HSP_SPA = {
     picture = spanishempire
 
         potential = {
@@ -219,7 +219,7 @@ political_decisions = {
         }
   	  }
 
-	unite_the_hispanics_under_mexican_rule = {
+	unite_HSP_MEX = {
     picture = spanishempire
 
         potential = {
