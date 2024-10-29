@@ -2245,7 +2245,7 @@ assimilation_chance = {
 
 	modifier = {
 		factor = -10
-		has_pop_culture = gypsy
+		has_pop_culture = roma
 	}
 
 	modifier = {

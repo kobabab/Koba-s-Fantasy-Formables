@@ -39,7 +39,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 10000
     }
@@ -221,7 +221,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 3000
     }
@@ -405,7 +405,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 7000
     }
@@ -653,7 +653,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1000
     }
@@ -977,7 +977,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 2000
     }
@@ -1323,7 +1323,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 2000
     }
@@ -1577,7 +1577,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1000
     }
@@ -1741,7 +1741,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1500
     }
@@ -2069,7 +2069,7 @@
     }
 
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 2000
     }
@@ -2407,7 +2407,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 6967
     }
@@ -2457,7 +2457,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 4000
     }
@@ -2513,7 +2513,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 2500
     }
@@ -2557,7 +2557,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 7000
     }
@@ -2619,7 +2619,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 6000
     }
@@ -2663,7 +2663,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 3000
     }
@@ -2739,7 +2739,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 14750
     }
@@ -2777,7 +2777,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 4000
     }
@@ -2827,7 +2827,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 10000
     }
@@ -2877,7 +2877,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 6000
     }
@@ -3275,7 +3275,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1000
     }
@@ -3450,7 +3450,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 300
     }
@@ -3487,7 +3487,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 300
     }
@@ -3524,7 +3524,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 300
     }
@@ -3561,7 +3561,7 @@
     }
 
     slaves = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 300
     }

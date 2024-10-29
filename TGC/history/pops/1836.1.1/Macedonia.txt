@@ -372,13 +372,13 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 500
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = sunni
 		size = 300
 	}

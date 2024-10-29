@@ -423,7 +423,7 @@
 	}
 
 	serfs = {
-		culture = gypsy
+		culture = roma
 		religion = catholic
 		size = 750
 	}
@@ -563,7 +563,7 @@
 	}
 
 	serfs = {
-		culture = gypsy
+		culture = roma
 		religion = catholic
 		size = 750
 	}
@@ -675,7 +675,7 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 4500
 	}
@@ -749,7 +749,7 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 250
 	}
@@ -793,7 +793,7 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 100
 	}
@@ -837,7 +837,7 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 150
 	}
@@ -870,13 +870,13 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 350
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = sunni
 		size = 200
 	}
@@ -974,13 +974,13 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 250
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = sunni
 		size = 100
 	}
@@ -1140,13 +1140,13 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = sunni
 		size = 300
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 100
 	}
@@ -1358,13 +1358,13 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = sunni
 		size = 400
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 400
 	}
@@ -1552,13 +1552,13 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = sunni
 		size = 400
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 400
 	}
@@ -1856,13 +1856,13 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = sunni
 		size = 400
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 100
 	}
@@ -2033,7 +2033,7 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = orthodox
 		size = 1000
 	}

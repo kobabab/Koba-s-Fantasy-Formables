@@ -1179,7 +1179,7 @@
 	}
 
 	farmers = {
-		culture = gypsy
+		culture = roma
 		religion = catholic
 		size = 375
 	}

@@ -2399,7 +2399,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = catholic
         size = 2925
     }
@@ -2533,7 +2533,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1375
     }
@@ -3006,7 +3006,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = catholic
         size = 3525
     }
@@ -3874,7 +3874,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = catholic
         size = 1000
     }
@@ -3965,7 +3965,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1000
     }
@@ -4104,7 +4104,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 100
     }

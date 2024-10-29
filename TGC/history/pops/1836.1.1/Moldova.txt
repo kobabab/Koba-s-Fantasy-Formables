@@ -3,7 +3,7 @@
 #Chisinau (332000/83000 POPS)
 676 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 400
     }
@@ -143,7 +143,7 @@
 #Balti (320000/80000 POPS)
 677 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 400
     }
@@ -307,7 +307,7 @@
 #Kelmentsi
 3279 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 40
     }
@@ -447,7 +447,7 @@
 #Kelmentsi
 3494 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 40
     }

@@ -277,7 +277,7 @@
 	}
 
 	serfs = {
-		culture = gypsy
+		culture = roma
 		religion = catholic
 		size = 5750
 	}
@@ -558,7 +558,7 @@
 		size = 35050
 	}
 	serfs = {
-		culture = gypsy
+		culture = roma
 		religion = protestant
 		size = 3000
 	}

@@ -199,7 +199,7 @@
 #Ismail (332000/83000 POPS)
 678 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 100
     }
@@ -743,7 +743,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1000
     }
@@ -1035,7 +1035,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 4200
     }
@@ -1181,7 +1181,7 @@
     }
 
     serfs = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 1000
     }
@@ -2535,7 +2535,7 @@
 #Simferopol (180000/45000 POPS)
 964 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 550
     }
@@ -3405,7 +3405,7 @@
 #Pervomaisk (496000/124000 POPS)
 969 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 575
     }
@@ -3861,7 +3861,7 @@
 #Ekaterinoslav (252000/63000 POPS)
 972 = {
     farmers = {
-        culture = gypsy
+        culture = roma
         religion = orthodox
         size = 135
     }

@@ -3122,7 +3122,7 @@ political_decisions = {
 					}
 					any_country = {
 						limit = { exists = yes }
-						any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 }
+						any_pop = { limit = { has_pop_culture = roma } literacy = -0.99 }
 					}
 				}
 
