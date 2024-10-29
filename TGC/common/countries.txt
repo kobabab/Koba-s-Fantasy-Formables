@@ -17,7 +17,7 @@
 ### Fantasy Formables  ###
 	ANC		= "countries/Andean Confederation.txt"
 	BLK     = "countries/Balkan Federation.txt"
-	HSP		= "countries/HispanicUnion.txt"
+	HSP		= "countries/Hispanic Union.txt"
 	BRG 	= "countries/Burgundy.txt"
 
 ### Europe ###
