@@ -1,0 +1,222 @@
+political_decisions = {
+
+	call_for_balkan_unity = {
+		picture = rigas_feraios
+		potential = {
+			is_greater_power = yes
+			has_country_flag = balkan_country
+			NOT = {
+				has_global_flag = the_call_for_balkan_unity
+			}
+		}
+
+		allow = {
+			war = no
+			prestige = 100
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			set_global_flag = the_call_for_hispanic_american_unity
+			set_country_flag = made_the_call_for_hispanic_american_unity
+			prestige = 20
+			all_core = { add_core = HSU }
+			any_country = {
+				limit = { has_country_flag = hispanic_content }
+				all_core = { add_core = HSU }
+			}
+			any_country = {
+				limit = { any_owned_province = { has_country_flag = hispanic_content } }
+				country_event = 555100
+			}
+		}
+
+		form_BLK = {
+		picture = map_balkans
+		potential = {
+			has_country_flag = made_the_call_for_hispanic_american_unity
+			has_country_flag = hispanic_content
+			is_greater_power = yes
+			NOT = {
+				has_country_flag = post_colonial_country
+				exists = HSU
+			}
+		}
+
+		allow = {
+			war = no
+			prestige = 200
+			revolution_n_counterrevolution = 1
+			HSU = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							war = no
+							is_greater_power = no
+							in_sphere = THIS
+							OR = {
+								is_vassal = no
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 40
+			set_global_flag = formed_HSU
+			change_tag = HSU
+			political_reform = federalism
+        	add_accepted_culture = ecuadorian
+			add_accepted_culture = colombian
+			add_accepted_culture = venezuelan
+        	add_accepted_culture = peruvian
+        	add_accepted_culture = bolivian
+        	add_accepted_culture = mexican
+        	add_accepted_culture = plantinean
+        	add_accepted_culture = central_american
+        	add_accepted_culture = paraguayan
+        	add_accepted_culture = chilean
+			any_country = {
+				limit = {
+					has_country_flag = hispanic_content
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				country_event = 555101 # Inherit
+			}
+			any_country = {
+				limit = {
+					any_owned_province = { is_core = BLK }
+					NOT = {
+						has_country_flag = hispanic_content
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				any_owned = {
+					limit = { is_core = BLK }
+					secede_province = BLK
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+    unite_the_hispanics_under_spanish_rule = {
+    picture = spanishempire
+
+        potential = {
+        tag = SPA
+        is_greater_power = yes
+		AND = {has_global_flag = pan_hispanism}
+        }
+
+        allow = {
+        tag = SPA
+        is_greater_power = yes
+        AND = {
+        has_global_flag = pan_hispanism
+        has_global_flag = latin_customs_union_exists_spa
+		is_sphere_leader_of = VNS
+		is_sphere_leader_of = VNG
+		is_sphere_leader_of = VLP
+		is_sphere_leader_of = VOP
+		is_sphere_leader_of = CGC
+        }
+        }
+
+        effect = {
+        change_tag = HSP
+        #Description: Accepted Pops
+        add_accepted_culture = ecuadorian
+		add_accepted_culture = colombian
+		add_accepted_culture = venezuelan
+        add_accepted_culture = peruvian
+        add_accepted_culture = bolivian
+        add_accepted_culture = mexican
+        add_accepted_culture = plantinean
+        add_accepted_culture = central_american
+        add_accepted_culture = paraguayan
+        add_accepted_culture = chilean
+
+		#Description:Cores
+		MEX = { all_core = { add_core = THIS } }
+		GCO = { all_core = { add_core = THIS } }
+		PBC = { all_core = { add_core = THIS } }
+		LPL = { all_core = { add_core = THIS } }
+		CHL = { all_core = { add_core = THIS } }
+
+        #Description: Annexation
+        any_country = {
+					limit = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+					any_owned = {
+						limit = { 
+                        TAG = VNS
+		                TAG = VNG
+		                TAG = VLP
+		                TAG = VOP
+		                TAG = CGC
+                        }
+						secede_province = THIS
+					}
+				}
+				random_country = {
+					limit = {
+						tag = VNS
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+				random_country = {
+					limit = {
+						tag = VNG
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+                random_country = {
+					limit = {
+						tag = VLP
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+				random_country = {
+					limit = {
+						tag = VOP
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+                random_country = {
+					limit = {
+						tag = CGC
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+        #Description: Flag for event
+        set_country_flag = hispanic_content
+        }
+  	  }
+	}
+}

@@ -16,6 +16,9 @@
 
 ### Fantasy Formables  ###
 	ANC		= "countries/Andean Confederation.txt"
+	BLK     = "countries/Balkan Federation.txt"
+	HSP		= "countries/HispanicUnion.txt"
+	BRG 	= "countries/Burgundy.txt"
 
 ### Europe ###
 
@@ -212,7 +215,6 @@
 
 	## Low Countries ##
 		BEL		= "countries/Belgium.txt"
-		BRG 	= "countries/Burgundy.txt"
 		FLA		= "countries/Flanders.txt"
 		FRI		= "countries/Friesland.txt"
 		LBG		= "countries/Limburg.txt"

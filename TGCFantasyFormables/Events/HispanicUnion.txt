@@ -1,0 +1,420 @@
+	#Spain Centralizes Empire, Gets to decide what to do with Viceroyalties
+	country_event = {
+		id = 8050
+		title = "EVTNAME89000"
+		desc = "EVTDESC89000"
+		picture = spa_emp
+
+		trigger = {
+			tag = KPB
+			has_country_flag = POR_formed_KPB
+		}
+		
+		mean_time_to_happen = { days = 10 }
+
+		fire_only_once = yes
+
+		#Do nothing, everyone gets slightly angry
+		option = {
+			name = "EVTOPTA89000"
+
+			any_pop = { 
+				limit = { 
+					OR = { 
+						has_pop_culture = ecuadorian
+		                has_pop_culture = colombian
+		                has_pop_culture = venezuelan
+                        has_pop_culture = peruvian
+                        has_pop_culture = bolivian
+                        has_pop_culture = mexican
+                        has_pop_culture = plantinean
+                        has_pop_culture = central_american
+                        has_pop_culture = paraguayan
+                        has_pop_culture = chilean
+					}
+				}
+				militancy = 2
+				consciousness = 2
+			}
+			any_pop = { 
+				limit = { 
+					has_pop_culture = spanish
+				}
+				militancy = 2
+				consciousness = 2
+			}
+            set_country_flag = spa_emp_tightrope			
+		}
+		
+		#Move the capital to Mexico City, Mexicans and Central Americans like it, Spanish hate it, everyone else slightly dislikes it
+		option = {
+			name = "EVTOPTB89000"
+			capital = 2172
+			any_pop = { 
+				limit = { 
+					OR = { 
+						has_pop_culture = mexican
+						has_pop_culture = central_american
+					}
+				}
+				militancy = -1
+				consciousness = 1
+			}
+            any_pop = { 
+				limit = { 
+					OR = { 
+						has_pop_culture = ecuadorian
+		                has_pop_culture = colombian
+		                has_pop_culture = venezuelan
+                        has_pop_culture = peruvian
+                        has_pop_culture = bolivian
+                        has_pop_culture = plantinean
+                        has_pop_culture = paraguayan
+                        has_pop_culture = chilean
+					}
+				}
+				militancy = 1
+				consciousness = 1
+			}
+			any_pop = { 
+				limit = { 
+					has_pop_culture = spanish
+				}
+				militancy = 3
+				consciousness = 3
+			}
+	        set_country_flag = spa_emp_tightrope		
+		}
+
+        #Move the capital to Bogata, Colombians, Venezuelans, and Ecuadorians like it, Spanish hate it, everyone else slightly dislikes it
+        option = {
+			name = "EVTOPTC89000"
+			capital = 2247
+			any_pop = { 
+				limit = { 
+					OR = { 
+						has_pop_culture = venezuelan
+						has_pop_culture = colombian
+                        has_pop_culture = ecuadorian
+					}
+				}
+				militancy = -1
+				consciousness = 1
+			}
+            any_pop = { 
+				limit = { 
+					OR = { 
+                        has_pop_culture = mexican
+                        has_pop_culture = central_american
+                        has_pop_culture = peruvian
+                        has_pop_culture = bolivian
+                        has_pop_culture = plantinean
+                        has_pop_culture = paraguayan
+                        has_pop_culture = chilean
+					}
+				}
+				militancy = 1
+				consciousness = 1
+			}
+			any_pop = { 
+				limit = { 
+					has_pop_culture = spanish
+				}
+				militancy = 3
+				consciousness = 3
+			}
+            set_country_flag = spa_emp_tightrope			
+		}
+
+        #Move the capital to La Paz, Peruvians, Chileans, and Bolvians like it, Spanish hate it, everyone else slightly dislikes it
+        option = {
+			name = "EVTOPTD89000"
+			capital = 2310
+			any_pop = { 
+				limit = { 
+					OR = { 
+						has_pop_culture = peruvian
+						has_pop_culture = bolivian
+                        has_pop_culture = chilean
+					}
+				}
+				militancy = -1
+				consciousness = 1
+			}
+            any_pop = { 
+				limit = { 
+					OR = { 
+                        has_pop_culture = mexican
+                        has_pop_culture = central_american
+						has_pop_culture = ecuadorian
+		                has_pop_culture = colombian
+		                has_pop_culture = venezuelan
+                        has_pop_culture = plantinean
+                        has_pop_culture = paraguayan
+					}
+				}
+				militancy = 1
+				consciousness = 1
+			}
+			any_pop = { 
+				limit = { 
+					has_pop_culture = spanish
+				}
+				militancy = 3
+				consciousness = 3
+			}
+            set_country_flag = spa_emp_tightrope			
+		}
+        #Move the capital to Buenos Aries, Platineans and Paraguayans like it, Spanish hate it, everyone else slightly dislikes it
+        option = {
+			name = "EVTOPTE89000"
+			capital = 2348
+			any_pop = { 
+				limit = { 
+					OR = { 
+						has_pop_culture = plantinean
+						has_pop_culture = paraguayan
+					}
+				}
+				militancy = -1
+				consciousness = 1
+			}
+            any_pop = { 
+				limit = { 
+					OR = {
+                        has_pop_culture = mexican
+                        has_pop_culture = central_american
+						has_pop_culture = ecuadorian
+		                has_pop_culture = colombian
+		                has_pop_culture = venezuelan
+                        has_pop_culture = peruvian
+                        has_pop_culture = bolivian
+                        has_pop_culture = chilean
+					}
+				}
+				militancy = 1
+				consciousness = 1
+			}
+			any_pop = { 
+				limit = { 
+					has_pop_culture = spanish
+				}
+				militancy = 3
+				consciousness = 3
+			}
+            set_country_flag = spa_emp_tightrope			
+		}
+
+		#Turn the Viceroyalties back into colonies, the Viceroyalties DESPISE it, Spain loves it
+		option = {
+			name = "EVTOPTF89000"
+			viceroyalties_colony = { }
+			badboy = 20
+			set_country_flag = colonial_spain_path
+			set_country_flag = hidden_tooltip 
+			random_owned = {
+				limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = { 
+					any_owned = { limit = { NOT = { region = BRZ_2447 } continent = south_america }
+						secede_province = VNS
+		                secede_province = VNG
+		                secede_province = VLP
+		                secede_province = VOP
+		                secede_province = CGC
+					}
+                    #legibility#
+					VNS = { civilized = no }
+                    VNG = { civilized = no }
+                    VLP = { civilized = no }
+                    VOP = { civilized = no }
+                    CGC = { civilized = no }
+                    #legibility#
+					VNS = { any_owned = { secede_province = THIS } }
+                    VNG = { any_owned = { secede_province = THIS } }
+                    VLP = { any_owned = { secede_province = THIS } }
+                    VOP = { any_owned = { secede_province = THIS } }
+                    CGC = { any_owned = { secede_province = THIS } }
+                    #legibility#
+					VNS = { civilized = yes }
+                    VNG = { civilized = yes }
+                    VLP = { civilized = yes }
+                    VOP = { civilized = yes }
+                    CGC = { civilized = yes }
+				}
+			}
+			clr_country_flag = hidden_tooltip 
+            set_country_flag = spa_emp_tightrope
+			any_pop = { 
+				limit = { 
+					OR = { 
+						has_pop_culture = ecuadorian
+		                has_pop_culture = colombian
+		                has_pop_culture = venezuelan
+                        has_pop_culture = peruvian
+                        has_pop_culture = bolivian
+                        has_pop_culture = mexican
+                        has_pop_culture = plantinean
+                        has_pop_culture = central_american
+                        has_pop_culture = paraguayan
+                        has_pop_culture = chilean
+					}
+				}
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = { 
+				limit = { 
+					has_pop_culture = spanish
+				}
+				militancy = -1
+				consciousness = 1
+			}
+		}
+	}
+
+    #The Spanish Empire falls apart if the player plays too badly
+	country_event = {
+		id = 8051
+		title = "EVTNAME89001"
+		desc = "EVTDESC89001"
+		picture = spa_broken
+
+		trigger = {
+			tag = HSP
+			NOT = { plurality = 50 }
+			OR = { 
+				AND = { 
+					NOT = { nationalism_n_imperialism = 1 }
+					NOT = { invention = national_fraternity }
+				}
+				capital_scope = { controlled_by = REB owner = { num_of_revolts = 10 } }
+				487 = { controlled_by = REB owner = { num_of_revolts = 10 } }
+				2172 = { controlled_by = REB owner = { num_of_revolts = 10 } }
+                2247 = { controlled_by = REB owner = { num_of_revolts = 10 } }
+                2310 = { controlled_by = REB owner = { num_of_revolts = 10 } }
+                2347 = { controlled_by = REB owner = { num_of_revolts = 10 } }
+                2324 = { controlled_by = REB owner = { num_of_revolts = 10 } }
+				NOT = { plurality = 20 }
+			}
+		}
+		
+		mean_time_to_happen = { 
+			months = 24
+			modifier = {
+				factor = 0.8
+				has_country_flag = spa_emp_tightrope
+			}
+			modifier = {
+				factor = 2
+				NOT = { average_militancy = 1 }
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { average_militancy = 2 }
+			}
+			modifier = {
+				factor = 0.6
+				average_militancy = 5
+			}
+			modifier = {
+				factor = 0.5
+				average_militancy = 7
+			}
+			modifier = {
+				factor = 0.2
+				capital_scope = { controlled_by = REB }
+			}
+
+		}
+		#Description: New Spain Secession
+		option = { 
+			name = "EVTOPTA89001"
+			prestige = -100
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = spa_emp_centralized
+					}
+				}
+				any_owned = { limit = { is_core = VNS } 
+					secede_province = VNS
+                    AND = {
+                    change_tag = MEX
+                    VNS = { all_core = { add_core = THIS } }
+                    }
+				}
+			}
+		#Description: New Granada Secession
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = spa_emp_centralized
+					}
+				}
+				any_owned = { limit = { is_core = VNG } 
+					secede_province = VNG
+                    AND = {
+                    change_tag = GCO
+                    VNG = { all_core = { add_core = THIS } }
+                    }
+				}
+			}
+        #Description: Peru Secession
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = spa_emp_centralized
+					}
+				}
+				any_owned = { limit = { is_core = VLP } 
+					secede_province = VLP
+                    AND = {
+                    change_tag = PEU
+                    PEU = { all_core = { add_core = THIS } }
+                    }
+				}
+			}
+		}
+        #Description: La Plata Secession
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = spa_emp_centralized
+					}
+				}
+				any_owned = { limit = { is_core = VOP } 
+					secede_province = VOP
+                    AND = {
+                    change_tag = LPL
+                    LPL = { all_core = { add_core = THIS } }
+                    }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = spa_emp_centralized
+					}
+				}
+				any_owned = { limit = { is_core = CGC } 
+					secede_province = CGC
+                    AND = {
+                    change_tag = CHL
+                    CHL = { all_core = { add_core = THIS } }
+                    }
+				}
+			}
+			MEX = { all_core = { remove_core = HSP } }
+			SPA = { all_core = { remove_core = HSP } }
+			CHL = { all_core = { remove_core = HSP } }
+			LPL = { all_core = { remove_core = HSP } }
+			GCO = { all_core = { remove_core = HSP } }
+			PEU = { all_core = { remove_core = HSP } }
+			SPA = { add_country_modifier = { name = national_confusion duration = 365 } }
+			MEX = { add_country_modifier = { name = national_confusion duration = 365 } }
+			PEU = { add_country_modifier = { name = national_confusion duration = 365 } }
+			GCO = { add_country_modifier = { name = national_confusion duration = 365 } }
+			LPL = { add_country_modifier = { name = national_confusion duration = 365 } }
+			CHL = { add_country_modifier = { name = national_confusion duration = 365 } }
+	}   
+
