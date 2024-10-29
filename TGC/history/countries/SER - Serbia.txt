@@ -38,6 +38,7 @@ colonial_policy = no_colonies
 
 set_country_flag = orthodox_country
 set_country_flag = gov_reassign_exemption
+set_country_flag = balkan_country
 ruling_party = SER_conservative
 upper_house = {
 	fascist = 0

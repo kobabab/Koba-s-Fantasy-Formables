@@ -1,12 +1,13 @@
 political_decisions = {
 
-	call_for_balkan_unity = {
-		picture = rigas_feraios
+	call_for_hispanic_american_unity = {
+		picture = spa_emp
 		potential = {
 			is_greater_power = yes
-			has_country_flag = balkan_country
+			has_country_flag = hispanic_content
 			NOT = {
-				has_global_flag = the_call_for_balkan_unity
+				has_global_flag = the_call_for_hispanic_american_unity
+				has_country_flag = mexican_empire #Mexican Empire gets to form it Spain style
 			}
 		}
 
@@ -20,10 +21,10 @@ political_decisions = {
 			set_global_flag = the_call_for_hispanic_american_unity
 			set_country_flag = made_the_call_for_hispanic_american_unity
 			prestige = 20
-			all_core = { add_core = HSU }
+			all_core = { add_core = HSP }
 			any_country = {
 				limit = { has_country_flag = hispanic_content }
-				all_core = { add_core = HSU }
+				all_core = { add_core = HSP }
 			}
 			any_country = {
 				limit = { any_owned_province = { has_country_flag = hispanic_content } }
@@ -31,15 +32,15 @@ political_decisions = {
 			}
 		}
 
-		form_BLK = {
-		picture = map_balkans
+		form_HSP = {
+		picture = spa_emp
 		potential = {
 			has_country_flag = made_the_call_for_hispanic_american_unity
 			has_country_flag = hispanic_content
 			is_greater_power = yes
 			NOT = {
 				has_country_flag = post_colonial_country
-				exists = HSU
+				exists = HSP
 			}
 		}
 
@@ -47,7 +48,7 @@ political_decisions = {
 			war = no
 			prestige = 200
 			revolution_n_counterrevolution = 1
-			HSU = {
+			HSP = {
 				all_core = {
 					OR = {
 						owned_by = THIS
@@ -67,8 +68,8 @@ political_decisions = {
 
 		effect = {
 			prestige = 40
-			set_global_flag = formed_HSU
-			change_tag = HSU
+			set_global_flag = formed_HSP
+			change_tag = HSP
 			political_reform = federalism
         	add_accepted_culture = ecuadorian
 			add_accepted_culture = colombian
@@ -126,11 +127,11 @@ political_decisions = {
         AND = {
         has_global_flag = pan_hispanism
         has_global_flag = latin_customs_union_exists_spa
-		is_sphere_leader_of = VNS
-		is_sphere_leader_of = VNG
-		is_sphere_leader_of = VLP
-		is_sphere_leader_of = VOP
-		is_sphere_leader_of = CGC
+		is_sphere_leader_of = MEX
+		is_sphere_leader_of = GCO
+		is_sphere_leader_of = PBC
+		is_sphere_leader_of = LPL
+		is_sphere_leader_of = CHL
         }
         }
 
@@ -165,18 +166,18 @@ political_decisions = {
 					}
 					any_owned = {
 						limit = { 
-                        TAG = VNS
-		                TAG = VNG
-		                TAG = VLP
-		                TAG = VOP
-		                TAG = CGC
+                        TAG = MEX
+		                TAG = GCO
+		                TAG = PBC
+		                TAG = LPL
+		                TAG = CHL
                         }
 						secede_province = THIS
 					}
 				}
 				random_country = {
 					limit = {
-						tag = VNS
+						tag = MEX
 						NOT = { tag = THIS }
 						exists = yes
 					}
@@ -184,7 +185,7 @@ political_decisions = {
 				}
 				random_country = {
 					limit = {
-						tag = VNG
+						tag = GCO
 						NOT = { tag = THIS }
 						exists = yes
 					}
@@ -192,7 +193,7 @@ political_decisions = {
 				}
                 random_country = {
 					limit = {
-						tag = VLP
+						tag = PBC
 						NOT = { tag = THIS }
 						exists = yes
 					}
@@ -200,7 +201,7 @@ political_decisions = {
 				}
 				random_country = {
 					limit = {
-						tag = VOP
+						tag = LPL
 						NOT = { tag = THIS }
 						exists = yes
 					}
@@ -208,15 +209,112 @@ political_decisions = {
 				}
                 random_country = {
 					limit = {
-						tag = CGC
+						tag = CHL
 						NOT = { tag = THIS }
 						exists = yes
 					}
 					country_event = 11101
 				}
-        #Description: Flag for event
         set_country_flag = hispanic_content
         }
   	  }
+
+	unite_the_hispanics_under_mexican_rule = {
+    picture = spanishempire
+
+        potential = {
+        tag = MEX
+        is_greater_power = yes
+		AND = {
+			has_global_flag = pan_hispanism
+			has_country_flag = mexican_empire
+		}
+        }
+
+        allow = {
+        tag = SPA
+        is_greater_power = yes
+        AND = {
+        has_global_flag = pan_hispanism
+        has_global_flag = latin_customs_union_exists_spa
+		is_sphere_leader_of = GCO
+		is_sphere_leader_of = PBC
+		is_sphere_leader_of = LPL
+		is_sphere_leader_of = CHL
+        }
+        }
+
+        effect = {
+        change_tag = HSP
+        #Description: Accepted Pops
+        add_accepted_culture = ecuadorian
+		add_accepted_culture = colombian
+		add_accepted_culture = venezuelan
+        add_accepted_culture = peruvian
+        add_accepted_culture = bolivian
+        add_accepted_culture = plantinean
+        add_accepted_culture = central_american
+        add_accepted_culture = paraguayan
+        add_accepted_culture = chilean
+
+		#Description:Cores
+		GCO = { all_core = { add_core = THIS } }
+		PBC = { all_core = { add_core = THIS } }
+		LPL = { all_core = { add_core = THIS } }
+		CHL = { all_core = { add_core = THIS } }
+
+        #Description: Annexation
+        any_country = {
+					limit = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+					any_owned = {
+						limit = { 
+		                TAG = GCO
+		                TAG = PBC
+		                TAG = LPL
+		                TAG = CHL
+                        }
+						secede_province = THIS
+					}
+				}
+				random_country = {
+					limit = {
+						tag = GCO
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+                random_country = {
+					limit = {
+						tag = PBC
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+				random_country = {
+					limit = {
+						tag = LPL
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+                random_country = {
+					limit = {
+						tag = CHL
+						NOT = { tag = THIS }
+						exists = yes
+					}
+					country_event = 11101
+				}
+        set_country_flag = hispanic_content
+        }
+  	  }	  
 	}
 }

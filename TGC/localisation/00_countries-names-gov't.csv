@@ -461,6 +461,12 @@ BKU_presidential_dictatorship;Centrocaspian Dictatorship;;;;;;;;;;;;;x
 BKU_proletarian_dictatorship;Baku Commune;;;;;;;;;;;;;x
 BKU_prussian_constitutionalism;Baku Emirate;;;;;;;;;;;;;x
 BKU_prussian_constitutionalism2;Apsheron Princedom;;;;;;;;;;;;;x
+BLK_absolute_monarchy;Kingdom of the Balkans;;;;;;;;;;;;;x
+BLK_democracy;Balkan Federation;;;;;;;;;;;;;x
+BLK_fascist_dictatorship;Empire of the Balkans;;;;;;;;;;;;;x
+BLK_hms_government;Kingdom of the Balkans;;;;;;;;;;;;;x
+BLK_proletarian_dictatorship;Socialist Federal Republic of the Balkans;;;;;;;;;;;;;x
+BLK_prussian_constitutionalism;Kingdom of the Balkans;;;;;;;;;;;;;x
 BLC_colonial_company;Baluchistan Agency;;;;;;;;;;;;;x
 BLC_dominion;Baluchistan Agency;;;;;;;;;;;;;x
 BLZ_colonial_company;British Honduras;;;;;;;;;;;;;x
@@ -1186,6 +1192,13 @@ HOL_prussian_constitutionalism;Duchy of Holstein;;;;;;;;;;;;;x
 HON_colonial_company;Intendencia de Comayagua;;;;;;;;;;;;;x
 HON_democracy;Republic of Honduras;;;;;;;;;;;;;x
 HON_federal_democracy;Republic of Honduras;;;;;;;;;;;;;x
+HSP_absolute_monarchy;Hispanic Empire;;;;;;;;;;;;;x
+HSP_democracy;United States of Hispanic America;;;;;;;;;;;;;x
+HSP_democracy2;Union of Hispanic Republics;;;;;;;;;;;;;x
+HSP_fascist_dictatorship;Grand Union of Hispanic Peoples;;;;;;;;;;;;;x
+HSP_hms_government;Hispanic Empire;;;;;;;;;;;;;x
+HSP_proletarian_dictatorship;Hispanic People’s Union;;;;;;;;;;;;;x
+HSP_prussian_constitutionalism;Hispanic Empire;;;;;;;;;;;;;x
 HUI_presidential_dictatorship;Anhui Clique;;;;;;;;;;;;;x
 IBR_absolute_monarchy;Iberian Empire;;;;;;;;;;;;;x
 IBR_bourgeois_dictatorship;Iberian Union;;;;;;;;;;;;;x
